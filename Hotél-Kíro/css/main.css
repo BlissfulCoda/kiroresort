@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,600;1,700&family=Marck+Script&family=Meddon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,600;1,700&family=Dancing+Script:wght@500;700&family=Marck+Script&family=Meddon&display=swap");
+/* ---------- Utilities Classes  ------------*/
+html,
+body {
+  font-family: Palatino, sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6rem;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2em;
+}
+
+p {
+  margin: 20px 0;
+  font-size: 1.1rem;
+}
+
+img {
+  width: 100%;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* -----------------------------------------------   Nav   ---------------------------------------------*/
+.main-header {
+  background: url("../img/hotel1.jpg") no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  position: relative;
+}
+
+.main-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.main-header * {
+  z-index: 15;
+}
+
+.main-header .side-nav {
+  z-index: 20;
+}
+
+#hotelImg .welcome p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ------- Nav Links -------- */
+
+.outside-ul {
+  opacity: -0.1;
+  transition: 3s;
+}
+
+.brand-logo {
+  opacity: -0.1;
+  transition: 3s;
+}
+
+#hotelImg .hotel-content {
+  position: relative;
+  top: 70px;
+  color: #fff;
+  text-align: center;
+  padding-top: 210px;
+}
+
+.scroll-icon {
+  position: absolute;
+  top: 163%;
+  left: 50%;
+  opacity: 0.5;
+}
+
+.icons i {
+  color: #ee7600;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.side-nav {
+  cursor: pointer;
+}
+
+#hotelImg .hotel-content h1 {
+  font-size: 3.1rem;
+}
+
+.about {
+  font-family: "Meddon", cursive;
+  font-size: 4.6rem;
+}
+
+/* chef sarah  */
+.chef {
+  font-family: "Meddon", cursive;
+  font-size: 1.2em;
+}
+
+.D {
+  font-family: "Meddon", cursive;
+  font-size: 1.8rem;
+}
+
+/* ------------------  Social Media Icons  ------------------- */
+
+.fixed-action-btn {
+  opacity: -0.1;
+  transition: 5s;
+}
+
+.fixed-action-btn:hover {
+  opacity: 12;
+  transition: 4s;
+}
+
+.fixed-action-btn ul li {
+  opacity: 0.4;
+  transition: 1s;
+}
+
+.fixed-action-btn ul li:hover {
+  transform: scale(1.5);
+  opacity: 0.9;
+}
+
+/* --------------------------------------------    Main Section ---------------------------------------- */
+
+/* ------------------- About Page   --------------- */
+
+#about {
+  height: 220px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  top: 20px;
+  padding: 0 20px;
+  margin: 20px 0;
+  padding-bottom: 40px;
+}
+
+.detail p {
+  display: flex;
+  max-width: 900px;
+  color: #000;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ------ About Cards ------- */
+
+/*  About scollFire  */
+
+.row-1 {
+  opacity: 0;
+}
+
+.card {
+  border-radius: 10px;
+  transition: all 1s ease-in;
+  position: relative;
+}
+
+.card h6 {
+  font-size: 0.8em;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card .card-image img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card .btn {
+  border-radius: 22px;
+}
+
+/* -------  Card 1 Spa ------- */
+#card-1 {
+  opacity: 0;
+  height: 300px;
+  width: 200px;
+  position: relative;
+  bottom: 12px;
+  left: 180px;
+  animation: cardOne 1s forwards ease-in-out;
+  animation-delay: 5s;
+}
+
+@keyframes cardOne {
+  to {
+    left: 210px;
+    opacity: 1;
+  }
+}
+
+#card-1:hover {
+  transform: scale(1.1);
+}
+
+/* ---------  Card 2 Explore -------- */
+
+#card-2 {
+  opacity: 0;
+  height: 290px;
+  width: 200px;
+  position: relative;
+  left: 140px;
+  bottom: 9px;
+  animation: cardTwo 1s forwards ease-in-out;
+  animation-delay: 5s;
+}
+
+@keyframes cardTwo {
+  to {
+    opacity: 1;
+  }
+}
+
+#card-2:hover {
+  transform: scale(1.1);
+}
+
+/* --------- Card 3 Food ---------- */
+#card-3 {
+  opacity: 0;
+  background: url("../img/food.jpg") no-repeat center center/cover;
+  height: 360px;
+  width: 250px;
+  border-radius: 10px;
+  width: 250px;
+
+  cursor: pointer;
+  position: relative;
+  top: 22px;
+  left: 90px;
+  z-index: 10;
+  transition: all 1s ease-in-out;
+  transform: scale(1.1);
+  animation: cardThree 1s forwards ease-in-out;
+  animation-delay: 4s;
+}
+
+@keyframes cardThree {
+  from {
+    opacity: 0;
+    transform: scale(1.2);
+    transition: all 1s ease-in-out;
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+#card-3:hover {
+  transform: scale(1.3);
+}
+
+#card-3 i {
+  background: #fff;
+  border-radius: 60px;
+  position: relative;
+  top: 110px;
+  padding: 15px;
+  font-size: 20px;
+}
+
+/* ----------- Card 4 Events ----------- */
+#card-4 {
+  opacity: 0;
+  height: 290px;
+  width: 200px;
+  position: relative;
+  right: 150px;
+  bottom: 10px;
+  z-index: 3;
+  animation: cardFour 1s forwards ease-in-out;
+  animation-delay: 5s;
+}
+
+@keyframes cardFour {
+  to {
+    opacity: 1;
+  }
+}
+
+#card-4:hover {
+  transform: scale(1.1);
+}
+
+/* --------- Card 5 Fitness ----------- */
+#card-5 {
+  opacity: 0;
+  height: 300px;
+  width: 200px;
+  position: relative;
+  right: 160px;
+  bottom: 13px;
+  animation: cardFive 1s forwards ease-in-out;
+  animation-delay: 5s;
+}
+
+@keyframes cardFive {
+  to {
+    right: 210px;
+    opacity: 1;
+  }
+}
+
+#card-5:hover {
+  transform: scale(1.1);
+}
+
+/* ----------------- About Content -------------- */
+
+.box {
+  width: 100%;
+  height: 850px;
+  position: relative;
+}
+
+#box1 {
+  height: 500px;
+  width: 390px;
+  position: absolute;
+  left: 110px;
+  top: 150px;
+  z-index: 1;
+}
+
+#box2 {
+  height: 500px;
+  width: 390px;
+  position: absolute;
+  border: solid #ff8a65 1px;
+  left: 10px;
+  top: 60px;
+}
+
+.food-menu {
+  position: relative;
+  top: 70px;
+}
+
+#box1 h3 {
+  position: absolute;
+  top: 10px;
+}
+
+/* ----------------  Menu  ----------------- */
+/* --- Parallax --- */
+.parallax-container {
+  position: relative;
+  bottom: 40px;
+}
+
+.first-carousel {
+  position: relative;
+  bottom: 80px;
+}
+
+.parallax {
+  position: relative;
+  height: 70%;
+  bottom: 80px;
+}
+
+.section-menu img {
+  cursor: pointer;
+}
+
+/* ---------------- Blog  ---------------- */
+.tabs .indicator {
+  background: #ee7600;
+}
+
+.blog {
+  width: 100%;
+  height: 670px;
+  /* position: relative;
+  bottom: 90px; */
+}
+
+/* ----------------  Contact Us  -------------- */
+.section-contact .card-panel {
+  position: relative;
+  z-index: 1;
+  top: 15px;
+}
+#googlemap {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+#contact {
+  position: relative;
+  bottom: 60px;
+}
+
+
+/* ---------------  Footer  -------------- */
+.page-footer {
+  padding: 10px;
+  position: relative;
+  bottom: 50px;
+}
+.page-footer #about-us h6,
+.page-footer #opening-hours h6 {
+  padding: 15px;
+  line-height: 1.6rem;
+}
+
+.page-footer #contact-info {
+  padding: 20px;
+  line-height: 1.6rem;
+}
+.page-footer #contact-info .p {
+  padding-top: 20px;
+}

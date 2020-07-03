@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+  <link type="text/css" rel="stylesheet" href="css/mobile.css" />
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+    defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kiro Resort, Maldives</title>
+</head>
+
+<body id="home" class="scrollspy">
+  <!--------------------- Hotel Nav------------------->
+  <header class="main-header">
+    <div class="navbar-fixed">
+      <nav class="transparent">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#home" class="nav-fixed brand-logo">
+              <span class="deep-orange-text darken-3">
+                <i class="material-icons left">hotel</i> KIRO
+              </span>
+            </a>
+            <a href="#" data-activates="mobile-nav" class="button-collapse">
+              <i class="material-icons">menu</i>
+            </a>
+            <!-----  Main Navbar  ----->
+            <ul class="outside-ul right hide-on-med-and-down">
+              <li>
+                <a class="current" href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#menu">Menu</a>
+              </li>
+              <li>
+                <a href="#blog">Blog</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-----  Side Navbar  ----->
+      <ul class="side-nav" id="mobile-nav">
+        <h5 class="orange-text text-darken-4 center">Kiro</h5>
+        <li>
+          <div class="divider"></div>
+        </li>
+        <li>
+          <a href="#home"> <i class="material-icons">house</i> Home</a>
+        </li>
+        <li>
+          <a href="#about"> <i class="material-icons">anchor</i>About</a>
+        </li>
+        <li>
+          <a href="#menu"> <i class="material-icons">api</i>Menu</a>
+        </li>
+        <li>
+          <a href="#blog"> <i class="material-icons">create</i>Blog</a>
+        </li>
+        <li>
+          <a href="#contact"> <i class="material-icons">mail</i>Contact</a>
+        </li>
+      </ul>
+
+      <!--------------------- Home Content ------------------->
+      <div id="hotelImg">
+        <div class="container">
+          <div class="hotel-content col s12 offset-m3 center">
+            <h1>
+              <!---- Welcome to Hotel Kiro ---->
+              <i class="about deep-orange-text darken-3">W</i><span class="welcome darken-3">elcome to Kiro Resort, Maldives</span>
+            </h1>
+            <p class="hide-on-small-only ">
+              Book your dream vacation & experience the unforgetable
+            </p>
+            <a href="#about" class="btn  orange darken-4 white-text waves-effect waves-light">
+              Read More
+            </a>
+            <a href="#contact" class="scrollspy white-text hide-on-small-only">
+              <i class="material-icons scroll-icon">arrow_drop_down_circle</i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!--------------------- Social Media Content ------------------->
+    <div class="fixed-action-btn">
+      <a class="btn-floating pulse deep-orange waves-effect waves-light" href="">
+        <i class="small material-icons">connect_without_contact</i>
+      </a>
+      <ul>
+
+        <!-----  Instagram  ----->
+        <li>
+          <a class="btn-floating transparent pulse deep-orange-text waves-effect waves-light" href="">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+
+        <!-----  Linked-In  ----->
+        <li>
+          <a class="btn-floating transparent pulse deep-orange-text waves-effect waves-light" href="https://www.linkedin.com/in/ronnie-kiyegga-872ba1164/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+
+        <!-----  GitHub  ----->
+        <li>
+          <a class="btn-floating transparent pulse deep-orange-text waves-effect waves-light"
+            href="https://github.com/BlissfulCoda">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-------------------------------------------------------------------- Main Section : About ------------------------------------------------------->
+
+    <section id="about" class="detail scrollspy">
+      <!-----  About  ----->
+      <h3 class="about deep-orange-text darken-3">About</h3>
+      <p class="center-align grey-text darken-4">
+        Lorem ipsum dolor sit amet
+        consectetur adipisicing elit.
+        Assumenda qui illum voluptate
+        tenetur. Praesentium, delectus,
+        fuga quod nihil numquam at molestias t
+        empora, iure aspernatur iusto illum
+        deserunt aperiam voluptatum? Nam!
+        iure aspernatur iusto illum
+        deserunt aperiam voluptatum? Nam!
+      </p>
+    </section>
+
+    <!-------  About Cards  -------->
+    <div class="row row-1">
+      <div class="about-card-container center">
+        <!------ Card 1  ------>
+        <div class="cOne  col s12 m2 l2 xl2">
+          <div class="card z-depth-4" id="card-1">
+            <div class="card-image">
+              <img src="./img/spa.jpg" alt="">
+            </div>
+            <div class="card-content">
+              <h6 class="card-title deep-orange-text "> <i class="tiny material-icons light-green-text accent-4">spa</i>
+                Spa
+              </h6>
+              <h6>Relax your body & mind </h6>
+            </div>
+          </div>
+        </div>
+
+        <!------ Card 2  ------>
+        <div class="ctwo col s12 m2 l2 xl2">
+          <div class="card z-depth-2" id="card-2">
+            <div class="card-image">
+              <img src="./img/hotel.jpg" alt="">
+            </div>
+            <div class="card-content">
+              <h6 class="card-title deep-black-text "> <i class="tiny material-icons yellow-text accent-4">wb_sunny</i>
+                Explore
+              </h6>
+              <h6> take in the island's beauty</h6>
+            </div>
+            <div class="card-action">
+              <a class="btn deep-orange darken-2 small waves-effect waves-light">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <!------  Card 3  ------>
+        <div class="cthree col s12 m4 l4 xl4">
+          <div id="card-3">
+            <i class="material-icons tiny deep-orange-text">restaurant</i>
+          </div>
+        </div>
+
+        <!------ Card 4  ----->
+        <div class="cfour col s12 m2 l2 xl2">
+          <div class="card z-depth-2" id="card-4">
+            <div class="card-image">
+              <img src="./img/party.jpg" alt="">
+            </div>
+            <div class="card-content">
+              <h6 class="card-title deep-black-text "> <i
+                  class="tiny material-icons deep-orange-text accent-4">bubble_chart</i>
+                Events
+              </h6>
+              <h6>Don't Miss out on events</h6>
+            </div>
+            <div class="card-action">
+              <a class="btn deep-orange darken-2 small waves-effect waves-light">Tickets</a>
+            </div>
+          </div>
+        </div>
+
+        <!------ Card 5  ------>
+        <div class="cfive col s12 m2 l2 xl2">
+          <div class="card z-depth-4" id="card-5">
+            <div class="card-image">
+              <img src="./img/gym2.jpg" alt="">
+            </div>
+            <div class="card-content">
+              <h6 class="card-title deep-orange-text"> <i
+                  class="tiny material-icons brown-text darken-3">fitness_center</i>
+                Fitness
+              </h6>
+              <h6>Dont miss a session </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------- Section: Ménu ------------->
+    <section id="menu" class="section-menu box center box scrollspy grey darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m5">
+            <div class="container">
+              <div class="row">
+                <div class="col s12 m6 l6">
+                  <div id="box1" class="hide-on-small-only">
+                    <img src="./img/coffee.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col s12 m6 l6 hide-on-small-only">
+                  <div id="box2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Food Menu  -->
+          <div class="col s12 m7 white food-menu center">
+              <div class="row center">
+                <h4 class="center"><u> Menu </u></h4>
+                <div class="col s12 m6">
+                  <div class="menu-1 lunch center">
+                    <h5> <u> drinks </u> </h5>
+                    <br>
+                    <h6> <i class="material-icons red-text">star</i> <b> HOLY BLOODY MARY - 10 - 4 </b></h6>
+                    <h6 class="grey-text lighten-2"> The best apple juice in the region, simply!</h6>
+                    <br>
+                    <h6> <b> WINTER COLADO</b></h6>
+                    <h6 class="grey-text lighten-2">The best apple juice in the region, simply!</h6>
+                    <br>
+                    <h6> <b> THE APPLE JUICE OF M. BIBERON - 4</b></h6>
+                    <h6 class="grey-text lighten-2">The best apple juice in the region!</h6>
+                    <br>
+                    <h6> <b>BOTANICAL GARDEN - 4</b></h6>
+                    <h6 class="grey-text lighten-2">Botanical, light lemon!</h6>
+                    <br>
+                    <h6> <b>TOMMY'S SPICE</b></h6>
+                    <h6 class="grey-text lighten-2">Citrus, spice, anise, 808 Whiskey</h6>
+                    <br>
+                    <h6> <b>THE APPLE JUICE OF M. BIBERON - 4</b></h6>
+                    <h6 class="grey-text lighten-2">The best apple juice in the region!</h6>
+                    <br>
+                  </div>
+                </div>
+                <div class="col s12 m6">
+                  <div class="menu-1 lunch center">
+                    <h5><u> food </u></h5>
+                    <br>
+                    <h6> <i class="material-icons red-text">star</i> <b>LUGER BURGER</b></h6>
+                    <h6 class="grey-text lighten-2"> The Burger for champions</h6>
+                    <br>
+                    <h6> <b> LEMON GRILLED CHICKEN </b></h6>
+                    <h6 class="grey-text lighten-2"> Finger-licking good!</h6>
+                    <br>
+                    <h6> <b>ANTIPASTO SALAD</b></h6>
+                    <h6 class="grey-text lighten-2">Lorem ipsum dolor sit .</h6>
+                    <br>
+                    <h6> <b>BUTTER CHICKEN</b></h6>
+                    <h6 class="grey-text lighten-2">Lorem ipsum dolor sit .
+                    </h6>
+                    <br>
+                    <h6> <i class="material-icons red-text">star</i> <b>STRAWBERRY DESSERT</b></h6>
+                    <h6 class="grey-text lighten-2">Lorem ipsum dolor sit . </h6>
+                    <br>
+                    <h6> <b>MANGO MERINGUE CAKE</b></h6>
+                    <h6 class="grey-text lighten-2">Lorem ipsum dolor sit .</h6>
+                    <br>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!------- Parallax -------->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="./img/chef.jpg">
+      </div>
+    </div>
+
+    <!-- Food Photos  -->
+    <section class="section section-food">
+      <div class="container">
+        <h5 class="center">
+          <span class="black-text"><u> Our Food </u></span>
+        </h5>
+        <h6 class="center grey-text darken-4">
+          Experience the finest A La Carte menu created by the Multi-award winning, 3 Michelin star, World renowned Chef
+          <br><br> <span class="chef deep-orange-text darken-3">SarahYekta</span>
+        </h6>
+        <br>
+        <!-- row 1: breakfast -->
+        <div class="row">
+          <div class="col food s12 m3">
+            <img class="materialboxed" src="./img/breaky.jpg" alt="">
+          </div>
+          <div class="col food s12 m3">
+            <img class="materialboxed" src="./img/breakfast5.jpg" alt="">
+          </div>
+          <div class="col food s12 m3">
+            <img class="materialboxed" src="./img/fruit.jpg" alt="">
+          </div>
+          <div class="col food s12 m3">
+            <img class="materialboxed" src="./img/breakfast2.jpg" alt="">
+          </div>
+        </div>
+        <!-- row 2; Lunch -->
+        <div class="row">
+          <div class="col food s12 m3">
+            <img class="materialboxed" src="./img/lunch5.jpg" alt="">
+          </div>
+          <div class="col food s12 m3">
+            <img class="materialboxed" src="./img/lunch1.jpg" alt="">
+          </div>
+          <div class="col food s12 m3">
+            <img class="materialboxed" src="./img/lunch2.jpg" alt="">
+          </div>
+          <div class="col food s12 m3">
+            <img class="materialboxed" src="./img/lunch4.jpg" alt="">
+          </div>
+        </div>
+        <!-- row 3 : Dinner -->
+        <div class="row">
+          <div class="col food s12 m3">
+            <img class="materialboxed" src="./img/dinner1.jpg" alt="">
+          </div>
+          <div class="col food s12 m3">
+            <img class="materialboxed" src="./img/dinner2.jpg" alt="">
+          </div>
+          <div class="col food s12 m3">
+            <img class="materialboxed" src="./img/drinks.jpg" alt="">
+          </div>
+          <div class="col food s12 m3">
+            <img class="materialboxed" src="./img/wine2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+
+    <!--------- Section: Blog ------------->
+    <section id="blog" class="blog  section-blog scrollspy row grey darken-4">
+      <br>
+      <h4 class="center ">
+        <span class="deep-orange-text darken-3 about center "><u>Blog</u></span>
+      </h4>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m5">
+            <br>
+            <h5 class="white-text">We also offer services in the following</h5>
+            <p class="white-text"> Lorem ipsum dolor sit
+              amet consectetur adipisicing
+              elit. Modi quaerat excepturi
+              odio laudantium alias? Dicta
+              accusantium perferendis corrupti
+              aut impedit?
+            </p>
+            <!-- FIXED FOOTER MODAL TRIGGER -->
+            <a class="waves-effect waves-light btn deep-orange darken-2 small modal-trigger" href="#modal">Blog</a>
+              <div class="carousel first-carousel">
+                <a class="carousel-item" href="#one!">
+                  <img src="./img/wedding.jpg" class="center white-text">
+                  <h6 class="center orange-text">Weddings</h6>
+                </a>
+                <a class="carousel-item" href="#two!">
+                  <img src="./img/show.jpg">
+                  <h6 class="center orange-text">Performances</h6>
+                </a>
+                <a class="carousel-item" href="#three!">
+                  <img src="./img/jetski.jpg">
+                  <h6 class="center orange-text">Water sports</h6>
+                </a>
+                <a class="carousel-item" href="#four!">
+                  <img src="./img/clubbing.jpg">
+                  <h6 class="center orange-text">Parties</h6>
+                </a>
+              </div>
+    <!-- FIXED FOOTER MODAL -->
+    <div class="modal modal-fixed-footer" id="modal">
+      <div class="modal-content">
+        <h4 class="center">Kiro Beach Resort</h4>
+        <h5 class="center">------ Maldives ------</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione impedit eum repudiandae doloribus praesentium
+          incidunt,
+          id exercitationem adipisci nostrum provident iusto autem delectus tempore aliquam veniam natus at consequuntur
+          totam, vero amet quia quibusdam laboriosam, numquam mollitia. Repellat incidunt facere nobis dolores officiis,
+          nesciunt voluptatibus exercitationem libero possimus adipisci. Voluptates est maxime quasi accusantium veniam
+          porro
+            <div class="row">
+              <div class="col food s12 m3">
+                <img class="materialboxed" src="./img/lunch5.jpg" alt="">
+              </div>
+              <div class="col food s12 m3">
+                <img class="materialboxed" src="./img/lunch1.jpg" alt="">
+              </div>
+              <div class="col food s12 m3">
+                <img class="materialboxed" src="./img/lunch2.jpg" alt="">
+              </div>
+              <div class="col food s12 m3">
+                <img class="materialboxed" src="./img/lunch4.jpg" alt="">
+              </div>
+            </div>
+          quia doloremque sapiente fugiat aperiam, minima numquam perferendis non assumenda vero inventore delectus. Alias
+          architecto quae, debitis quia dignissimos totam, voluptatum ratione omnis officia possimus quas esse nisi dolor
+          sequi facere maiores commodi, reiciendis quasi. Eos tenetur consectetur omnis nihil. Iste at similique eaque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione impedit eum repudiandae doloribus praesentium
+          incidunt,
+          id exercitationem adipisci nostrum provident iusto autem delectus tempore aliquam veniam natus at consequuntur
+          totam, vero amet quia quibusdam laboriosam, numquam mollitia. Repellat incidunt facere nobis dolores officiis,
+          nesciunt voluptatibus exercitationem libero possimus adipisci. Voluptates est maxime quasi accusantium veniam
+          porro
+          quia doloremque sapiente fugiat aperiam, minima numquam perferendis non assumenda vero inventore delectus. Alias
+          architecto quae, debitis quia dignissimos totam, voluptatum ratione omnis officia possimus quas esse nisi dolor
+          sequi facere maiores commodi, reiciendis quasi. Eos tenetur consectetur omnis nihil. Iste at similique eaque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione impedit eum repudiandae doloribus praesentium
+          incidunt,
+          id exercitationem adipisci nostrum provident iusto autem delectus tempore aliquam veniam natus at consequuntur
+          totam, vero amet quia quibusdam laboriosam, numquam mollitia. Repellat incidunt facere nobis dolores officiis,
+          nesciunt voluptatibus exercitationem libero possimus adipisci. Voluptates est maxime quasi accusantium veniam
+          porro
+          quia doloremque sapiente fugiat aperiam, minima numquam perferendis non assumenda vero inventore delectus. Alias
+          architecto quae, debitis quia dignissimos totam, voluptatum ratione omnis officia possimus quas esse nisi dolor
+          sequi facere maiores commodi, reiciendis quasi. Eos tenetur consectetur omnis nihil. Iste at similique eaque?</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action red-text modal-close waves-effect waves-green btn-flat">Ok</a>
+      </div>
+    </div>  
+    </div>
+          <div class="col blog1 s12 m6 offset-m1">
+            <br>
+            <div class="row">
+              <div class="col s12 ">
+                <ul class="tabs grey darken-4">
+                  <li class="tab col s3"><a href="#tab1" class="active white-text">Events</a></li>
+                  <li class="tab col s3"><a class="white-text" href="#tab2" class="white-text">PARTIES</a></li>
+                  <li class="tab col s3"><a href="#tab3" class="white-text"> REVIEWS </a></li>
+                </ul>
+              </div>
+              <!--  -->
+              <div id="tab1" class="col s12">
+                <br>
+                <h5 class="white-text"> Have an event in Mind? Get in touch </h5>
+                <p class="white-text"> 
+                  Lorem ipsum dolor sit amet 
+                  consectetur adipisicing elit. 
+                  Eius adipisci animi ea voluptates 
+                  error dolor maiores minus laboriosam 
+                  atque, non, illum magni sunt magnam 
+                  velit architecto rerum dolorem 
+                  corrupti provident. Corrupti vitae 
+                  facilis blanditiis a et, quas quod 
+                  doloremque libero nesciunt ipsam, 
+                  temporibus illum iusto tempore nam 
+                  quae tenetur? Eligendi?
+                </p>
+                <p class="white-text">
+                  Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit.
+                  Necessitatibus autem, ex tenetur
+                  ullam aut consequatur. Exercitationem
+                  labore quos perspiciatis, cum consequuntur
+                  quod consequatur perferendis blanditiis
+                  ex, sunt quasi, ipsa omnis!
+                </p>
+                  <a class="btn deep-orange darken-2 small  waves-effect waves-light modal-trigger" href="#modal1">Send an Inquiry</a>
+                  
+                  <!-- MODAL -->
+                  <div class="modal" id="modal1">
+                    <div class="modal-content">
+                      <h5>Get in touch!</h5>
+                      <form>
+                          <div>
+                            <input class="input-field" placeholder="Name" id="name" type="text">
+                            <label for="name">Name</label>
+                          </div>
+                          <div class="input-field">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="phone" type="tel">
+                            <label for="phone">Phone Number</label>
+                          </div>
+                            <!-- INLINE FIELD -->
+                            Expected Number of guests:
+                            <div class="input-field inline">
+                              <input class="input-field" id="users" type="text">
+                              <label for="users">#</label>
+                            </div>
+                          <!-- TEXTAREA -->
+                          <div>
+                            <textarea class="materialize-textarea" placeholder="Message" id="message"></textarea>
+                            <label for="message">Message</label>
+                          </div>
+                          <div>
+                            <input type="submit" value="Submit" class="btn ">
+                          </div>
+
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <a class="modal-action green-text modal-close waves-effect waves-black btn-flat">Ok</a>
+                    </div>
+                  </div>
+              </div>
+              <!--  -->
+              <div id="tab2" class="col s12">
+                <br>
+                <h5 class="white-text"> Have an event in Mind? Get in touch </h5>
+                <p class="white-text">Lorem ipsum dolor sit amet
+                consectetur adipisicing elit.
+                Eius adipisci animi ea voluptates
+                error dolor maiores minus laboriosam
+                atque, non, illum magni sunt magnam
+                velit architecto rerum dolorem
+                corrupti provident. Corrupti vitae
+                facilis blanditiis a et, quas quod
+                doloremque libero nesciunt ipsam,
+                temporibus illum iusto tempore nam
+                quae tenetur? Eligendi?
+                </p>
+                <p class="white-text">
+                  Lorem ipsum dolor sit amet 
+                  consectetur adipisicing elit. 
+                  Necessitatibus autem, ex tenetur 
+                  ullam aut consequatur. Exercitationem 
+                  labore quos perspiciatis, cum consequuntur 
+                  quod consequatur perferendis blanditiis 
+                  ex, sunt quasi, ipsa omnis!
+                </p>
+                  <a class="btn center deep-orange darken-2 small waves-effect waves-light modal-trigger" href="#modal2">CHECK AVAILABILITY</a>
+                  
+                  <!-- MODAL -->
+                  <div class="modal" id="modal2">
+                    <div class="modal-content">
+                      <form>
+                        <h5>Choose a Date & Time</h5>
+                          <!-- DATE PICKER -->
+                          <div class="input-field">
+                            <input type="text" class="datepicker" id="date">
+                            <label for="date">Choose a Date</label>
+                          </div>
+                          
+                          <!-- TIME PICKER -->
+                          <div>
+                            <input class="timepicker" type="text" id="time">
+                            <label for="time">Choose a Time</label>
+                          </div>
+                          <br>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <a class="modal-action green-text modal-close waves-effect waves-black btn-flat">Ok</a>
+                    </div>
+                  </div>
+              </div>
+              <!--  -->
+              <div id="tab3" class="col s12">
+                <br>
+                  <p class="white-text"> <span>"</span> The well-presented food options by world renowned chef <u>Sarah</u> & her staff 
+                    even meals you wouldn't normally eat, are delicious and follow a consistently high 
+                    standard of subtle flavours that delicately and gracefully complement the taste pallets of your mouth.
+                      <span>"</span>
+                    <div class="chip">
+                      <img src="./img/testimonial-2.jpg" > Xanthe Clay
+                    </div>
+                    <span class="grey-text lighten-3">- The Telegraph, 26 jun 2020, 2:56pm </span> <br>
+                    <i class="material-icons deep-orange-text lighten-5">star</i>
+                    <i class="material-icons deep-orange-text lighten-5">star</i>
+                    <i class="material-icons deep-orange-text lighten-5">star</i>
+                    <i class="material-icons deep-orange-text lighten-5">star</i>
+                    <i class="material-icons deep-orange-text lighten-5">star</i>
+                  </p>
+                  <!-- Testinomial 3 -->
+                  
+                  <p class="white-text"> 
+                    <span class="testimonial">"</span> 
+                    Resort Kiro provides hospitality that attracts both famous & normal people who meet & experience an enjoyable meal, drink & conversation.
+                    A place for family & friends to enjoy personal moments & special occassions.
+                     <span>"</span>
+                    <div class="chip">
+                      <img src="./img/testimonial-3.jpg"> John Doe
+                    </div>
+                    <span class="grey-text lighten-3">- Forbes.com, 22 jun 2020, 3:56pm</span> <br>
+                    <i class="material-icons deep-orange-text lighten-5">star</i>
+                    <i class="material-icons deep-orange-text lighten-5">star</i>
+                    <i class="material-icons deep-orange-text lighten-5">star</i>
+                    <i class="material-icons deep-orange-text lighten-5">star</i>
+                    <i class="material-icons deep-orange-text lighten-5">star</i>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------- Section: Contact ------------->
+    <section id="contact" class="section section-contact center scrollspy">
+      <div id="googlemap">
+        <p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7763822.148875823!2d99.3501380961613!3d18.167194322374534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31149057b0824589%3A0xec592481f99cd81!2sLaos!5e0!3m2!1sen!2suk!4v1593145902807!5m2!1sen!2suk"
+            width="100%" height="580" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+
+        </p>
+      </div>
+      <div class="container contact-form">
+        <div class="row">
+          <div class="col s12 m6 offset-6 right">
+            <div class="card-panel z-delpth-5">
+              <h5>Get in touch</h5>
+              <div class="input-field">
+                <input type="text" id="name1" placeholder="name">
+                <label for="name">Name</label>
+              </div>
+              <div class="input-field">
+                <input type="text" id="email" placeholder="email">
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field">
+                <input type="text" id="phone1" placeholder="phone">
+                <label for="phone">Phone</label>
+              </div>
+              <div class="input-field">
+                <textarea class="materialize-textarea" type="text" id="message" placeholder="Message">
+                </textarea>
+                <label for="message">Message</label>
+              </div>
+              <input type="submit" value="submit" class="btn waves-effect waves-light blue-grey">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--------- Section: Footer  ------------->
+  <div class="page-footer grey darken-4">
+    <div class="container">
+      <div class="row">
+
+        <!-------- About Info ------->
+        <div id="about-us" class="footerCards col s12 m4 l4 xl4">
+          <h6 class="deep-orange-text darken-3">ABOUT US</h6>
+          <h6 class="grey-text transparent">Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Provident vel laborum
+            deleniti. Accusamus, dignissimos aperiam
+            saepe inventore aliquid adipisci eveniet?
+          </h6>
+          <h6 class="grey-text transparent">Copyright &copy; All rights reserved</h6>
+        </div>
+
+        <!-------- Contact Info ------->
+        <div id="contact-info" class="footerCards col s12 m4 l4 xl4">
+          <h6 class="deep-orange-text darken-3">CONTACT &nbsp; INFO</h6>
+          <div class="p">
+            <p>
+              <h6 class="Cinfo grey-text transparent">
+                <i class="material-icons tiny">location_on</i>&nbsp;
+                Male North Harbour Magu Male, Maldives
+              </h6>
+            </p>
+            <P>
+              <h6 class="grey-text lighten-3 transparent">
+                <i class="material-icons tiny">phone_enabled</i>&nbsp;&nbsp;
+                07494397215
+              </h6>
+            </P>
+            <P>
+              <h6 class="grey-text transparent">
+                <i class="material-icons tiny">mail</i>&nbsp;&nbsp;
+                Ronniekiyegga@hotmail.com
+              </h6>
+            </P>
+          </div>
+        </div>
+
+        <!-------- Opening Hours ------->
+        <div id="opening-hours" class="footerCards col s12 m4 l4 xl4">
+          <h6 class="deep-orange-text darken-3">OPENING HOURS</h6>
+          <h6 class="grey-text transparent">
+            Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Provident vel laborum
+            deleniti. Accusamus, dignissimos aperiam
+            saepe inventore aliquid adipisci eveniet?
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script scr="http://maps.googleapis.com/maps/api/js"></script>
+  <script src="./js/main.js"></script>
+  <!-- <script>
+    $(document).ready(function () {
+
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 600) {
+          $('nav').addClass('grey darken-4')
+        } else {
+          $("nav").removeClass("grey darken-4");
+        }
+      });
+
+
+      $(".button-collapse").sideNav();
+      $('.parallax').parallax();
+      $('.first-carousel').carousel();
+
+
+      // Modals 
+       $('.modal').modal({
+        dismissible: true,
+        inDuration: 500,
+        outDuration: 400,
+      });
+
+       //INIT DATEPICKER
+      $('.datepicker').pickadate({
+        selectMonths: true,
+        selectYears: 10,
+        today: 'Today',
+        closeOnSelect: true
+      });
+
+      //INIT TIMEPICKER
+      $('.timepicker').pickatime({
+        default: 'now',
+        twelvehour: true,
+        donetext: 'go',
+        cleartext: 'erase',
+        canceltext: 'leave',
+        autoclose: true
+      });
+
+      // Testimonials
+      $('.testimonials').carousel({
+        fullWidth: true
+      })
+
+      //ScrollFire
+      const options = [
+        {
+          selector: ".hotel-content",
+          offset: 0,
+          callback: function (el) {
+            Materialize.fadeInImage($(el));
+          }
+        },
+        {
+          selector: ".outside-ul",
+          offset: 0,
+          callback: function (el) {
+            Materialize.fadeInImage($(el));
+          }
+        },
+        {
+          selector: ".detail",
+          offset: 0,
+          callback: function (el) {
+            Materialize.fadeInImage($(el));
+          }
+        },
+        {
+          selector: ".fixed-action-btn",
+          offset: 0,
+          callback: function (el) {
+            Materialize.fadeInImage($(el));
+          }
+        },
+        {
+          selector: ".brand-logo",
+          offset: 0,
+          callback: function (el) {
+            Materialize.fadeInImage($(el));
+          }
+        },
+        {
+          selector: ".cOne",
+          offset: 0,
+          callback: function (el) {
+            Materialize.fadeInImage($(el));
+          }
+        },
+        {
+          selector: ".ctwo",
+          offset: 0,
+          callback: function (el) {
+            Materialize.fadeInImage($(el));
+          }
+        },
+        {
+          selector: ".cthree",
+          offset: 0,
+          callback: function (el) {
+            Materialize.fadeInImage($(el));
+          }
+        },
+        {
+          selector: ".cfour",
+          offset: 0,
+          callback: function (el) {
+            Materialize.fadeInImage($(el));
+          }
+        },
+        {
+          selector: ".cfive",
+          offset: 0,
+          callback: function (el) {
+            Materialize.fadeInImage($(el));
+          }
+        },
+        {
+          selector: ".row-1",
+          offset: 210,
+          callback: function (el) {
+            Materialize.fadeInImage($(el));
+            // Materialize.toast('first one ')
+          }
+        }
+      ];
+
+      //initialize Scrollspy
+      $('.scrollspy').scrollSpy();
+      Materialize.scrollFire(options);
+
+
+    });
+  </script> -->
+</body>
+</html>
