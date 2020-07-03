@@ -198,7 +198,7 @@
   }
 }
 
-/* ------- Min-width 601px - Max-width 768px */
+/* ------- Min-width 602px - Max-width 768px */
 @media (min-width: 602px) and (max-width: 768px) {
   .box {
     width: 100%;
@@ -517,7 +517,7 @@
   }
 }
 
-/* ------- Min-width 1021px - Max-width 1220px */
+/* ------- Min-width 1150px - Max-width 1220px */
 @media (min-width: 1150px) and (max-width: 1220px) {
   .box {
     width: 100%;
